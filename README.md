@@ -143,17 +143,17 @@ Epoch 100/100
 
 Model 1 Accuracy: 
 
-![alt text](https://github.com/mrinal-r/Experiments/blob/master/model1_acc.png "Model 1 Accuracy")
+![alt text](https://github.com/mrinal-r/Experiments/blob/master/metrics-images/model1_acc.png "Model 1 Accuracy")
 
 
 Model 2 Accuracy: 
 
-![alt text](https://github.com/mrinal-r/Experiments/blob/master/model2_acc.png "Model 2 Accuracy")
+![alt text](https://github.com/mrinal-r/Experiments/blob/master/metrics-images/model2_acc.png "Model 2 Accuracy")
 
 
 Model 3 Accuracy: 
 
-![alt text](https://github.com/mrinal-r/Experiments/blob/master/model3_acc.png "Model 3 Accuracy")
+![alt text](https://github.com/mrinal-r/Experiments/blob/master/metrics-images/model3_acc.png "Model 3 Accuracy")
 
 
 # Test Results
