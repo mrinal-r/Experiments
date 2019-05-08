@@ -1,2 +1,4 @@
 # Experiments
-Playing around with deep learning models
+This repository is created to host deep learning models
+
+Author: Mrinal Rawool
