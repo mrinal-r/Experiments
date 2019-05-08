@@ -5,6 +5,8 @@ Author: Mrinal Rawool
 
 # Word Based Text Generation with LSTM
 
+Link to the code: https://github.com/mrinal-r/Experiments/blob/master/Word_Based_Text_Generator.ipynb
+
 **Dataset Acquisition and Feature Engineering**
 
 Getting sample texts for this project was fairly straightforward. I used texts from Project Gutenberg (https://www.gutenberg.org/). Project Gutenberg is an organization that provides free literary work by noted authors from across the world. However, this raw text data needs to be preprocessed in order to be consumed by the deep learning model. The way in which the data is processed depends on the nature of our experiment. There a many flavors of text generation/ prediction models like character based, word based, sentence based to name a few. The choice of granualirity dictates what one may deem as important while training. For example, for a word based model, we would prefer getting rid of all kinds of punctuations. However, we might want to retain some punctuations in a sentence based prediction model. Differences also arise in the way in which sequences are generated.
