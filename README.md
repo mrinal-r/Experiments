@@ -5,13 +5,24 @@ Author: Mrinal Rawool
 
 # Word Based Text Generation with LSTM
 
+
+
 Link to the code: https://github.com/mrinal-r/Experiments/blob/master/Word_Based_Text_Generator.ipynb
+
+
 
 Link to Deep Learning project report: https://github.com/mrinal-r/Experiments/blob/master/project-report/project_report_dl.md
 
+
+
 Link to Artificial Intelligence project report: https://github.com/mrinal-r/Experiments/blob/master/project-report/project_report_al.md
 
-**Goal**: 
+
+
+## Goal: 
+
+
+
 To create a model that learns the structure of written language and is able to 
 
 (i) generate a sensible phrases given a seed text
@@ -20,15 +31,27 @@ To create a model that learns the structure of written language and is able to
 
 The model is trained by making it predict the (n+1)th word after feeding it n words in a sequence. The task for testing the model is to make it precdict the next K words by feeding it with a sequence of n words.
 
-**Dataset Acquisition and Feature Engineering**
+
+
+### Dataset Acquisition and Feature Engineering
+
+
 
 Getting sample texts for this project was fairly straightforward. I used texts from Project Gutenberg (https://www.gutenberg.org/). Project Gutenberg is an organization that provides free literary work by noted authors from across the world. However, this raw text data needs to be preprocessed in order to be consumed by the deep learning model. The way in which the data is processed depends on the nature of our experiment. There a many flavors of text generation/ prediction models like character based, word based, sentence based to name a few. The choice of granualirity dictates what one may deem as important while training. For example, for a word based model, we would prefer getting rid of all kinds of punctuations. However, we might want to retain some punctuations in a sentence based prediction model. Differences also arise in the way in which sequences are generated.
 
-**Data augumentation:**
+
+
+### Data augumentation:
+
+
 
 Planning to use embedding layer trained on Glove dataset (https://nlp.stanford.edu/projects/glove/). The Glove dataset is a carefully curated datset of words and their relationships. I'm hoping that the word prediction would get better and the predicted sentences will be more coherent after using the embedding layer weights trained on Glove dataset.
 
-**Visualization**
+
+
+### Visualization
+
+
 
 Visualization for text generation can be best done by giving a sneak peek at the kind of transformation needed in order to get the data ready to be consumed by the model.
 
@@ -67,7 +90,11 @@ After tokenizing/vectorizing, sample length of input integers sequence 51
 
 Finally, we have the input in the form that can be ingested by the model. 
 
-**Training**
+
+
+### Training
+
+
 
 Since we have sequential data, we do not randomize. Also, my online research showed that more often than not, the entire data set is used for training. 
 
@@ -75,14 +102,18 @@ In the above section, I demonstrated how raw data is vectorized. We have a seque
 
 Furthermore, we regard textual data as categorical data. Hence Y will be one hot encoded with the # columns = vocabulary size.
 
-**Testing**
+
+
+### Testing
 
 For testing, we can use 
 1. One of the sequence as seed text to generate the next n words.
 2. A new seed text created using words from the dataset
 
 
-**Architecture Design**
+## Architecture Design
+
+
 
 My research was aimed at trying to find a model of decent size that would give me significant results with the resources I have. Generally, LSTMs tend to be costly due to their cell size. They can also prove difficult to debug or to understand the working of the model. The model I have currently is a sequential model having the following layers:
 
@@ -169,7 +200,7 @@ Model 3 Accuracy:
 ![alt text](https://github.com/mrinal-r/Experiments/blob/master/metrics-images/model3_acc.png "Model 3 Accuracy")
 
 
-# Test Results
+### Test Results
 
 For testing, I fed the same seed data to all the three models to generate the next 50 words in sequence. Below are the results:
 
