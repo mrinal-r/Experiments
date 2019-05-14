@@ -206,3 +206,8 @@ Model 3 with Glove embedding layer
 ![alt text](https://github.com/mrinal-r/Experiments/blob/master/metrics-images/model3_with_glove_acc.png "Model 3 with Glove embedding layer Accuracy")
 
 
+Epoch 99/100
+2338/2338 [==============================] - 96s 41ms/step - loss: 0.6371 - acc: 0.8084
+
+
+
