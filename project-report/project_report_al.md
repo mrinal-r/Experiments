@@ -38,6 +38,76 @@ I cannot use linear activation for text generation. Since text generation is a m
 
 **[2 points] Effort to evaluate your predictions**
 
+I have evaluated my model by providing all the three models with the same seed text. The sequence of words predicted by each model are in line with the training accuracies seen for those models.
+
+*Seed Data:*
+
+
+*off toward the madeleine suddenly an object rolled before the duke which he had struck with the toe of his boot it was a large piece of bread spattered with mud then to his amazement monsieur de saulnes saw the duc de hardimont pick up the piece of bread wipe it*
+
+
+*Next 50 words predicted by Model 1:*
+
+
+*carefully the reproachful embroidered of the other has something headache before the duke had gave himself i read the cannon of fort henri in the line in vain had you see the reproachful embroidered of the other devil it i have a suspicion and the asylum in one night i/8
+
+
+*Next 50 words predicted by Model 2:*
+
+
+*and it his me to me to me would living her baskets and night his and it it white to it to would is i i i i i have have name me i i i i blonde me me me me me myself become their their another i my*
+
+
+*Next 50 words predicted by Model 3:*
+
+
+*carefully with his handkerchief embroidered and a continual fit of hunger jeanvictor a gloomy place he had lost a piece of bread spattered with mud three years and as he cried jeanvictor went at last my plate and then unfortunately i was always remembered to feel her warm little hand*
+
+
+To undertsand the results further, given below are the accuracies for all the models after training them for 100 epochs
+
+I have provided graphs of training accuracy v/s number of epochs for all the three models. As for the training time, I have noted down the time taken by individual epoch to complete. Overall, the time taken per epoch remained constant for all three models.
+
+Model 1:
+
+Epoch 100/100
+
+2338/2338 [==============================] - 3s 1ms/step - loss: 2.5191 - acc: 0.3353
+
+Model 2:
+
+Epoch 100/100
+
+2338/2338 [==============================] - 0s 183us/step - loss: 2.1793 - acc: 0.4299
+
+Model 3:
+
+Epoch 100/100
+
+2338/2338 [==============================] - 2s 680us/step - loss: 0.9978 - acc: 0.7417
+
+Overall, since the dataset had a modest size, the training time was comparable.
+Model 1 Accuracy: 
+
+![alt text](https://github.com/mrinal-r/Experiments/blob/master/metrics-images/model1_acc.png "Model 1 Accuracy")
+
+
+Model 2 Accuracy: 
+
+![alt text](https://github.com/mrinal-r/Experiments/blob/master/metrics-images/model2_acc.png "Model 2 Accuracy")
+
+
+Model 3 Accuracy: 
+
+![alt text](https://github.com/mrinal-r/Experiments/blob/master/metrics-images/model3_acc.png "Model 3 Accuracy")
+
+
+Staying true to the training accuracy, output of model 2 does not make any sense. It has few meaningful phrases like 'are you astonished' but most of it is just word repreated several times (e.g. me me me me me ).
+
+Model 1 performs better than model 2 in that it doesn't keep repeating words. The model demostrates that it is trying to learn and can spit out different words. However, the words don't make much sense.
+
+My model: In my opinion, model 3 performs slightly better than the other two. It has a couple of phrases that make sense like *'carefully with his handkerchief'* and *'a continual fit of hunger'* or *'he had lost a piece of bread spattered with mud'*. However, there is still scope for improvement.
+
 
 
 **[4 points] Effort to code a function that represents your model
