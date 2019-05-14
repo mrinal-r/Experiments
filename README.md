@@ -197,7 +197,7 @@ Model 1 performs better than model 2 in that it doesn't keep repeating words. Th
 My model:
 In my opinion, model 3 performs slightly better than the other two. It has a couple of phrases that make sense like *well i do not laugh my friend it offends* and *jeanvictor went on their frequent watches* or *i am just as well i have always remembered*. However, there is still scope for improvement.
 
-Improvement# 1
+Experiment# 1
 
 Used the weights provided by Glove embedding layer instead of training a new embedding layer.This embedding layer was non trainable. However, rest of the layers were trained on the same textual data. The learning rate of the model was higher than the previous run with trainable embedding layer. 
 
