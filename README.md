@@ -9,6 +9,8 @@ Link to the code: https://github.com/mrinal-r/Experiments/blob/master/Word_Based
 
 Link to Deep Learning project report: https://github.com/mrinal-r/Experiments/blob/master/project-report/project_report_dl.md
 
+Link to Artificial Intelligence project report: https://github.com/mrinal-r/Experiments/blob/master/project-report/project_report_al.md
+
 **Goal**: 
 To create a model that learns the structure of written language and is able to 
 
