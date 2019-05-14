@@ -203,7 +203,6 @@ Used the weights provided by Glove embedding layer instead of training a new emb
 
 Model 3 with Glove embedding layer
 
-
-
+![alt text](https://github.com/mrinal-r/Experiments/blob/master/metrics-images/model3_with_glove_acc.png "Model 3 with Glove embedding layer Accuracy")
 
 
