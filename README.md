@@ -225,7 +225,7 @@ Testing Model 3
 well i do not laugh my friend it offends three years and duty tonight jeanvictor went on their frequent watches and alarms my forehead at the commissary officer all my ration of hunger the time i am just as well i have always remembered the soldier i am just out
 
 
-**Observations**
+### Observations
 
 Staying true to the training accuracy, output of model 2 does not make any sense. It has few meaningful phrases like *'are you astonished'* but most of it is just word repreated several times.
 
@@ -234,7 +234,7 @@ Model 1 performs better than model 2 in that it doesn't keep repeating words. Th
 My model:
 In my opinion, model 3 performs slightly better than the other two. It has a couple of phrases that make sense like *well i do not laugh my friend it offends* and *jeanvictor went on their frequent watches* or *i am just as well i have always remembered*. However, there is still scope for improvement.
 
-Experiment# 1
+## Further Improvements
 
 Used the weights provided by Glove embedding layer instead of training a new embedding layer.This embedding layer was non trainable. However, rest of the layers were trained on the same textual data. The learning rate of the model was higher than the previous run with trainable embedding layer. 
 
