@@ -23,7 +23,7 @@ Novel visualizations/plots can get you bonus points. For example, plots involvin
 
 
 
-The input data nd its transformation for my project can be best explained with s sample sentence and walking through the transformation to understand what the model needs. I have provided this information in the Data preprocessing section of README.md.
+The input data and its transformation for my project can be best explained with a sample sentence and walking through the transformation to understand what the model needs. I have provided this information in the Data preprocessing section of README.md.
 
 
 
@@ -72,6 +72,38 @@ Comparison with state-of-the-art methods**
 
 I have benchmarked my model against two word based text prediction models that were published online. For the purpose of benchmarking, I retained the structure of the original models, fed the same data to all the three models with the same batch size and number of epochs.
 
+*Seed Data:*
+
+
+*off toward the madeleine suddenly an object rolled before the duke which he had struck with the toe of his boot it was a large piece of bread spattered with mud then to his amazement monsieur de saulnes saw the duc de hardimont pick up the piece of bread wipe it*
+
+
+*Next 50 words predicted by Model 1:*
+
+
+*carefully the reproachful embroidered of the other has something headache before the duke had gave himself i read the cannon of fort henri in the line in vain had you see the reproachful embroidered of the other devil it i have a suspicion and the asylum in one night i/8
+
+
+*Next 50 words predicted by Model 2:*
+
+
+*and it his me to me to me would living her baskets and night his and it it white to it to would is i i i i i have have name me i i i i blonde me me me me me myself become their their another i my*
+
+
+*Next 50 words predicted by Model 3:*
+
+
+*carefully with his handkerchief embroidered and a continual fit of hunger jeanvictor a gloomy place he had lost a piece of bread spattered with mud three years and as he cried jeanvictor went at last my plate and then unfortunately i was always remembered to feel her warm little hand*
+
+
+The output of model 2 does not make any sense. It has few meaningful phrases like 'are you astonished' but most of it is just word repreated several times (e.g. me me me me me ).
+
+Model 1 performs better than model 2 in that it doesn't keep repeating words. The model demostrates that it is trying to learn and can spit out different words. However, the words don't make much sense.
+
+My model: In my opinion, model 3 performs slightly better than the other two. It has a couple of phrases that make sense like *'carefully with his handkerchief'* and *'a continual fit of hunger'* or *'he had lost a piece of bread spattered with mud'*. However, there is still scope for improvement.
+
+These observations are in agreement with the accuraies seen for the models after being trained on the same data for 100 epochs. Accuracies vs epoch plot is displayed in one of the questions below.
+
 
 
 **[3 points] Documentation efforts (report preparation)
@@ -79,7 +111,11 @@ Documentation of all steps above**
 
 
 
-This repository contains README.md documenting the project in detail. I have also added the original text that was used for training along with the sequences that were generated from the proprocessing step. Also included in a different folder are trained model parameters for all three models. These were saved using callbacks and checkpoint on the training accuracy. I have also included the tokenizer that containes word to int mappings for all the unique words in the text.
+This repository contains README.md documenting the project in detail. Link to READMe.md https://github.com/mrinal-r/Experiments/blob/master/README.md
+
+I have also added the original text that was used for training along with the sequences that were generated from the proprocessing step. Everything about the input can be found at https://github.com/mrinal-r/Experiments/tree/master/input-artifacts
+
+Also included in a different folder are trained model parameters for all three models. These were saved using callbacks and checkpoint on the training accuracy. I have also included the tokenizer that containes word to int mappings for all the unique words in the text. Everything about the saved models can be found at https://github.com/mrinal-r/Experiments/tree/master/model-artifacts
 
 
 
