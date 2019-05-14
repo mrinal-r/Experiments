@@ -7,6 +7,8 @@ Author: Mrinal Rawool
 
 Link to the code: https://github.com/mrinal-r/Experiments/blob/master/Word_Based_Text_Generator.ipynb
 
+Link to Deep Learning project report: https://github.com/mrinal-r/Experiments/blob/master/project-report/project_report_dl.md
+
 **Goal**: 
 To create a model that learns the structure of written language and is able to 
 
