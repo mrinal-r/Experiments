@@ -46,13 +46,28 @@ Verify that predictions you obtain are same as the one you obtained using your t
 
 
 
+Not applicable for for my model since LSTM parameters are complicated. So extracting the parameters and using them to generate a prediction is not feasible. Furthermore, text prediction problem can be seen as multiclass classification problem with the number of classes equal to the size of the vocabulary. This can be enormous; which means that the probability of predicting one word from the vocabulary would be extremely small. This leads to further complications in manual prediction of the next word.
+
+
+
 **[4 points] Effort to develop a 'reproducible' code
 Someone else must be able to reproduce all your results**
+
+
+
+The reproducible Python Notebook can be found at https://github.com/mrinal-r/Experiments/blob/master/Word_Based_Text_Generator.ipynb
 
 
 
 **[4 points] Effort to document all the steps above**
 
 
-All the project documentation in available in README.md.
+This repository contains README.md documenting the project in detail. Link to READMe.md https://github.com/mrinal-r/Experiments/blob/master/README.md
+
+I have also added the original text that was used for training along with the sequences that were generated from the proprocessing step. Everything about the input can be found at https://github.com/mrinal-r/Experiments/tree/master/input-artifacts
+
+Also included in a different folder are trained model parameters for all three models. These were saved using callbacks and checkpoint on the training accuracy. I have also included the tokenizer that containes word to int mappings for all the unique words in the text. Everything about the saved models can be found at https://github.com/mrinal-r/Experiments/tree/master/model-artifacts
+
+
+
 
